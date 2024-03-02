@@ -1,0 +1,123 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background: fixed;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./neapl3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: image;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-duration: 10s;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6vh;
+  background-color: black;
+}
+.navbar ul li {
+  display: inline;
+  padding: 10px;
+}
+.navbar a {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.navbar ul {
+  margin: 5px;
+}
+.navbar a:hover {
+  color: black;
+  background-color: white;
+  transition: ease-in-out;
+  transition-duration: 3s;
+}
+.navbar a:active {
+  color: red;
+}
+
+@keyframes image {
+  20% {
+    background-image: url(./nepal1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background-image: url(./nepal2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background-image: url(./nepal5.png);
+    background-position: center;
+    background-size: cover;
+    transition: ease-in-out;
+    transition-duration: 2s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .banner {
+    background-image: url(./king.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .navbar {
+    display: table;
+    text-align: center;
+  }
+  .navbar ul li {
+    display: list-item;
+  }
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.7) url(./king.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  color: white;
+  font-weight: 900;
+  animation-name: imagehaiguys;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.intro h1 {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+@keyframes imagehaiguys {
+  0% {
+    background-image: url(./king.jpg);
+  }
+  30% {
+    background-image: url(./datalistnepal.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
